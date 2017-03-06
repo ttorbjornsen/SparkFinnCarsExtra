@@ -1,0 +1,11 @@
+*.jar
+cassandra/finncars
+cassandra/system
+cassandra/system_auth
+cassandra/system_distributed
+cassandra/system_schema
+volumes/airflow/bin
+volumes/airflow/lib
+volumes/airflow/local
+volumes/airflow/logs
+

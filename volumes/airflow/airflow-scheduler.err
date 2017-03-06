@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/root/.virtualenvs/airflow/bin/airflow", line 15, in <module>
+    args.func(args)
+  File "/root/.virtualenvs/airflow/local/lib/python2.7/site-packages/airflow/bin/cli.py", line 447, in scheduler
+    with ctx:
+  File "/root/.virtualenvs/airflow/local/lib/python2.7/site-packages/daemon/daemon.py", line 397, in __enter__
+    self.open()
+  File "/root/.virtualenvs/airflow/local/lib/python2.7/site-packages/daemon/daemon.py", line 389, in open
+    self.pidfile.__enter__()
+  File "/root/.virtualenvs/airflow/local/lib/python2.7/site-packages/lockfile/__init__.py", line 197, in __enter__
+    self.acquire()
+  File "/root/.virtualenvs/airflow/local/lib/python2.7/site-packages/daemon/pidfile.py", line 60, in acquire
+    super(TimeoutPIDLockFile, self).acquire(timeout, *args, **kwargs)
+  File "/root/.virtualenvs/airflow/local/lib/python2.7/site-packages/lockfile/pidlockfile.py", line 88, in acquire
+    self.path)
+lockfile.AlreadyLocked: /root/airflow/airflow-scheduler.pid is already locked

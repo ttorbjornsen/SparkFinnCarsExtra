@@ -1,0 +1,6 @@
+#!/bin/bash
+service cron start
+source /root/.virtualenvs/airflow/bin/activate
+airflow initdb
+airflow webserver -p 8082 -D
+airflow scheduler -D 
