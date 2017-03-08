@@ -20,7 +20,7 @@ default_args = {
     # 'end_date': datetime(2016, 1, 1),
 }
 
-dag = DAG('SparkStreaming_v1', default_args=default_args, schedule_interval="@once")
+dag = DAG('SparkStreaming_v2', default_args=default_args, schedule_interval="@once")
 
 cmd = "sh /usr/jobs/SparkStreamingFinnCars.sh "
 t1 = BashOperator(task_id='spark_streaming',bash_command=cmd,dag=dag)

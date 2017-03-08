@@ -5,6 +5,7 @@
 *.out
 *.dbold
 *.pid
+*.pyc
 *SNAPSHOT*
 volumes/cassandra/system_schema
 volumes/cassandra/system
